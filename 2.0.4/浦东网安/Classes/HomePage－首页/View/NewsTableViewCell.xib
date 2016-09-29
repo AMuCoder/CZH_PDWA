@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xr-Hy-IK6">
+                        <rect key="frame" x="8" y="8" width="53" height="53"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="q6O-pg-Wpn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioC-OA-vGg">
+                        <rect key="frame" x="172" y="39" width="140" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="QLg-nO-bsA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-fQ-UdI">
+                        <rect key="frame" x="71" y="10" width="231" height="22"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="ioC-OA-vGg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="6HD-58-tFq"/>
+                    <constraint firstItem="F7P-fQ-UdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="DbB-R4-ggi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ioC-OA-vGg" secondAttribute="trailing" constant="5" id="G25-Yr-pH1"/>
+                    <constraint firstItem="F7P-fQ-UdI" firstAttribute="leading" secondItem="9xr-Hy-IK6" secondAttribute="trailing" constant="10" id="LjX-sE-9X3"/>
+                    <constraint firstItem="F7P-fQ-UdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="NyH-m1-WOS"/>
+                    <constraint firstItem="F7P-fQ-UdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="VdL-jp-rud"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9xr-Hy-IK6" secondAttribute="bottom" id="Zey-Jm-0zl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ioC-OA-vGg" secondAttribute="bottom" constant="5" id="aQ9-GB-qXo"/>
+                    <constraint firstItem="F7P-fQ-UdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="acn-VQ-C72"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="F7P-fQ-UdI" secondAttribute="trailing" constant="10" id="cgV-Hw-Lx3"/>
+                    <constraint firstItem="9xr-Hy-IK6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gHB-Z8-K2Z"/>
+                    <constraint firstItem="9xr-Hy-IK6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="h7P-Wb-eHk"/>
+                    <constraint firstItem="F7P-fQ-UdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qyc-fa-TDm"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="DbB-R4-ggi"/>
+                        <exclude reference="VdL-jp-rud"/>
+                        <exclude reference="acn-VQ-C72"/>
+                        <exclude reference="qyc-fa-TDm"/>
+                        <exclude reference="G25-Yr-pH1"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="newsImageView" destination="9xr-Hy-IK6" id="hhV-ob-2b9"/>
+                <outlet property="newsTitle" destination="F7P-fQ-UdI" id="ZMj-2A-uoZ"/>
+                <outlet property="timeLable" destination="ioC-OA-vGg" id="LsT-Pz-93y"/>
+            </connections>
+            <point key="canvasLocation" x="627" y="341"/>
+        </tableViewCell>
+    </objects>
+</document>

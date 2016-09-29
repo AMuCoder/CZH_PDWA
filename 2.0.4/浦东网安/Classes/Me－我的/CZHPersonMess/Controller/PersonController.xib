@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonController">
+            <connections>
+                <outlet property="narbars" destination="yI6-Bb-cLL" id="UlA-on-uwP"/>
+                <outlet property="tableview" destination="5zT-Hr-FRQ" id="coL-2O-GvP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5zT-Hr-FRQ">
+                    <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PTg-sX-4zx"/>
+                        <outlet property="delegate" destination="-1" id="ZDd-hb-hnb"/>
+                    </connections>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yI6-Bb-cLL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Sax-dy-dxX"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="个人消息" id="HdT-sv-JLg">
+                            <barButtonItem key="leftBarButtonItem" image="back" id="3cS-fK-O5G">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="back:" destination="-1" id="XUc-cA-UQ0"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yI6-Bb-cLL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3hi-mj-rZP"/>
+                <constraint firstAttribute="trailing" secondItem="5zT-Hr-FRQ" secondAttribute="trailing" id="5U9-zZ-GSI"/>
+                <constraint firstAttribute="trailing" secondItem="yI6-Bb-cLL" secondAttribute="trailing" id="ciA-1r-bk4"/>
+                <constraint firstItem="yI6-Bb-cLL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d43-hV-xDV"/>
+                <constraint firstItem="5zT-Hr-FRQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k4k-Bd-vQi"/>
+                <constraint firstAttribute="bottom" secondItem="5zT-Hr-FRQ" secondAttribute="bottom" id="mwM-A3-fgt"/>
+                <constraint firstItem="5zT-Hr-FRQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="t8o-L1-J7D"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="334" y="256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="15" height="23"/>
+    </resources>
+</document>

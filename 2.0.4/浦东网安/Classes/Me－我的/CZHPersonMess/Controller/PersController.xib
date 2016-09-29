@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersController">
+            <connections>
+                <outlet property="barbar" destination="qwO-Rv-1Gr" id="M4W-vN-I98"/>
+                <outlet property="buttons" destination="tec-2Q-BBf" id="O0e-lB-VWx"/>
+                <outlet property="lables" destination="glP-8c-5ae" id="1aL-pr-abB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glP-8c-5ae">
+                    <rect key="frame" x="30" y="94" width="260" height="0.0"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tec-2Q-BBf">
+                    <rect key="frame" x="40" y="114" width="240" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.068251527845859528" green="0.9620853066444397" blue="0.15090826153755188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DLB-jq-gCx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="haveread:" destination="-1" eventType="touchUpInside" id="h7i-6e-ljJ"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwO-Rv-1Gr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Xbs-hy-I3M"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="消息详情" id="tGI-Pp-pll">
+                            <barButtonItem key="leftBarButtonItem" image="back" id="MiE-9K-Oom">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="back:" destination="-1" id="yEN-hS-9jm"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tec-2Q-BBf" firstAttribute="top" secondItem="glP-8c-5ae" secondAttribute="bottom" constant="20" id="CQn-cj-Bgh"/>
+                <constraint firstItem="qwO-Rv-1Gr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CZK-LR-g8Z"/>
+                <constraint firstAttribute="trailing" secondItem="tec-2Q-BBf" secondAttribute="trailing" constant="40" id="Dnj-f8-tge"/>
+                <constraint firstItem="glP-8c-5ae" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="HTc-VT-aGV"/>
+                <constraint firstAttribute="trailing" secondItem="qwO-Rv-1Gr" secondAttribute="trailing" id="QUP-0d-n6p"/>
+                <constraint firstItem="tec-2Q-BBf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="RK8-lP-xcC"/>
+                <constraint firstItem="glP-8c-5ae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="dyL-VL-FnH"/>
+                <constraint firstItem="qwO-Rv-1Gr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gcn-Wg-wgP"/>
+                <constraint firstItem="tec-2Q-BBf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="grz-h2-Mob"/>
+                <constraint firstAttribute="trailing" secondItem="glP-8c-5ae" secondAttribute="trailing" constant="30" id="uzS-kU-a4p"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="252" y="240"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="15" height="23"/>
+    </resources>
+</document>

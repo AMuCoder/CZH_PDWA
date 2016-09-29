@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//
+//  Created by xiaomage on 15/7/22.
+//  Copyright (c) 2015年 陈章瀚. All rights reserved.
+//
+
+#ifndef _1_______PrefixHeader_pch
+#define _1_______PrefixHeader_pch
+
+//#import "UIView+CZHExtension.h"
+//#import "UIBarButtonItem+CZHExtension.h"
+
+#import "UIBarButtonItem+Extension.h"
+#import "MBProgressHUD+MJ.h"
+#import "HttpRequestManager.h"
+#import "HMTextView.h"
+
+#ifdef DEBUG
+#define CZHLog(...) NSLog(__VA_ARGS__)
+#else
+#define CZHLog(...)
+#endif
+
+#define CZHLogFunc CZHLog(@"%s", __func__)
+
+#define CZHRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define CZHGlobolBg CZHRGBColor(223,223,223)
+
+#define CZHURL @"http://210.16.188.65:8080/pdwaapp/appService/"
+
+#define IOS8 [[UIDevice currentDevice].systemVersion doubleValue] >= 8.0
+
+#endif

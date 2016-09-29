@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WangBaInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="东方网点网吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnN-oh-aje">
+                        <rect key="frame" x="10" y="10" width="300" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star35" translatesAutoresizingMaskIntoConstraints="NO" id="eVl-ca-zJQ">
+                        <rect key="frame" x="10" y="41" width="80" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="dZN-Nm-SBu"/>
+                            <constraint firstAttribute="width" constant="80" id="x8Q-Nq-0qO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="负责人:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crt-Fo-H5m">
+                        <rect key="frame" x="95" y="40" width="60" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="bO0-IH-BXO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KZ-aS-JHa">
+                        <rect key="frame" x="155" y="41" width="155" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淮海路326号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnO-Zq-961">
+                        <rect key="frame" x="10" y="71" width="300" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="eVl-ca-zJQ" firstAttribute="top" secondItem="AnN-oh-aje" secondAttribute="bottom" constant="10" id="05i-mo-zNg"/>
+                    <constraint firstItem="2KZ-aS-JHa" firstAttribute="centerY" secondItem="eVl-ca-zJQ" secondAttribute="centerY" id="0iy-KC-g9a"/>
+                    <constraint firstItem="BnO-Zq-961" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9qy-N6-RQk"/>
+                    <constraint firstItem="Crt-Fo-H5m" firstAttribute="centerY" secondItem="eVl-ca-zJQ" secondAttribute="centerY" id="DnQ-zz-wSA"/>
+                    <constraint firstItem="2KZ-aS-JHa" firstAttribute="leading" secondItem="Crt-Fo-H5m" secondAttribute="trailing" id="DoY-Oe-idH"/>
+                    <constraint firstItem="AnN-oh-aje" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="I9B-jM-IQS"/>
+                    <constraint firstItem="eVl-ca-zJQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QJl-9q-ptc"/>
+                    <constraint firstAttribute="trailing" secondItem="AnN-oh-aje" secondAttribute="trailing" constant="10" id="RfO-1R-aTg"/>
+                    <constraint firstAttribute="trailing" secondItem="BnO-Zq-961" secondAttribute="trailing" constant="10" id="VWP-K3-Kpx"/>
+                    <constraint firstAttribute="trailing" secondItem="2KZ-aS-JHa" secondAttribute="trailing" constant="10" id="aWy-7t-Di1"/>
+                    <constraint firstItem="AnN-oh-aje" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="js2-fO-oV0"/>
+                    <constraint firstItem="BnO-Zq-961" firstAttribute="top" secondItem="Crt-Fo-H5m" secondAttribute="bottom" constant="10" id="ppK-xF-Ilk"/>
+                    <constraint firstItem="Crt-Fo-H5m" firstAttribute="leading" secondItem="eVl-ca-zJQ" secondAttribute="trailing" constant="5" id="vjh-Us-cpu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="FuZeRen" destination="2KZ-aS-JHa" id="xs4-2C-Xcu"/>
+                <outlet property="WangBaimage" destination="eVl-ca-zJQ" id="aun-bF-NiR"/>
+                <outlet property="WangBaname" destination="AnN-oh-aje" id="ne7-pZ-Ohw"/>
+                <outlet property="diZhi" destination="BnO-Zq-961" id="qaM-im-C1F"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="193"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star35" width="80" height="16"/>
+    </resources>
+</document>

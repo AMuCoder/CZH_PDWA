@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BDViewController">
+            <connections>
+                <outlet property="bangbtn" destination="dr4-xU-NT5" id="XBB-H8-SXv"/>
+                <outlet property="hegeNum" destination="jyK-0o-QSP" id="QdL-3a-HWx"/>
+                <outlet property="phone" destination="qfb-Ty-wtY" id="ryw-gX-Llg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入合格证号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-0o-QSP">
+                    <rect key="frame" x="20" y="64" width="335" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0V2-wo-r2z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-Ty-wtY">
+                    <rect key="frame" x="20" y="114" width="335" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lkX-NQ-krF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr4-xU-NT5">
+                    <rect key="frame" x="40" y="174" width="295" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.71764705880000002" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="k9L-B5-NYG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="绑定合格证号">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="bangDing:" destination="-1" eventType="touchUpInside" id="IwO-vo-eHk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qfb-Ty-wtY" firstAttribute="top" secondItem="jyK-0o-QSP" secondAttribute="bottom" constant="10" id="MUz-MY-yz1"/>
+                <constraint firstItem="dr4-xU-NT5" firstAttribute="top" secondItem="qfb-Ty-wtY" secondAttribute="bottom" constant="20" id="N2B-MJ-sal"/>
+                <constraint firstItem="qfb-Ty-wtY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="PS0-yo-Evs"/>
+                <constraint firstItem="jyK-0o-QSP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="asB-rI-6Mv"/>
+                <constraint firstAttribute="trailing" secondItem="jyK-0o-QSP" secondAttribute="trailing" constant="20" id="dRP-WD-Gbw"/>
+                <constraint firstItem="jyK-0o-QSP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="g4h-QH-0Re"/>
+                <constraint firstAttribute="trailing" secondItem="dr4-xU-NT5" secondAttribute="trailing" constant="40" id="g8v-dQ-nGf"/>
+                <constraint firstItem="dr4-xU-NT5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="pQm-ii-jnO"/>
+                <constraint firstAttribute="trailing" secondItem="qfb-Ty-wtY" secondAttribute="trailing" constant="20" id="smT-eH-hjC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
